@@ -10,6 +10,7 @@
 
 
 // tslint:disable:variable-name API description
+// tslint:disable:no-any describes the API as best we are able today
 
 declare module 'goog:npm.polymer.polymer.lib.elements.DomModule' {
 

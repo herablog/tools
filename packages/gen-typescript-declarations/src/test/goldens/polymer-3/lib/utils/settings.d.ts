@@ -10,6 +10,7 @@
 
 
 // tslint:disable:variable-name API description
+// tslint:disable:no-any describes the API as best we are able today
 
 import {pathFromUrl} from './resolve-url.js';
 
