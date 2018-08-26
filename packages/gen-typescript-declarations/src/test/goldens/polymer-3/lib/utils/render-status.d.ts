@@ -8,14 +8,8 @@
  *   lib/utils/render-status.js
  */
 
-export {flush};
 
-
-/**
- * Flushes all `beforeNextRender` tasks, followed by all `afterNextRender`
- * tasks.
- */
-declare function flush(): void;
+// tslint:disable:variable-name API description
 
 export {beforeNextRender};
 

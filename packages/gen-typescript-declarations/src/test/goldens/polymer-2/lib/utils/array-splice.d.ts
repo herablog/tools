@@ -8,6 +8,9 @@
  *   lib/utils/array-splice.html
  */
 
+
+// tslint:disable:variable-name API description
+
 /// <reference path="boot.d.ts" />
 
 declare namespace Polymer {

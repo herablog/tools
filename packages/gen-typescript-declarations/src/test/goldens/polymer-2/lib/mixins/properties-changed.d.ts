@@ -8,6 +8,9 @@
  *   lib/mixins/properties-changed.html
  */
 
+
+// tslint:disable:variable-name API description
+
 /// <reference path="../utils/boot.d.ts" />
 /// <reference path="../utils/mixin.d.ts" />
 /// <reference path="../utils/async.d.ts" />

@@ -8,6 +8,9 @@
  *   lib/utils/path.js
  */
 
+
+// tslint:disable:variable-name API description
+
 export {isPath};
 
 

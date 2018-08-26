@@ -8,6 +8,9 @@
  *   lib/legacy/mutable-data-behavior.js
  */
 
+
+// tslint:disable:variable-name API description
+
 import {MutableData} from '../mixins/mutable-data.js';
 
 export {MutableDataBehavior};

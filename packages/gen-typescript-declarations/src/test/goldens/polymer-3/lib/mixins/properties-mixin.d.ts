@@ -8,6 +8,9 @@
  *   lib/mixins/properties-mixin.js
  */
 
+
+// tslint:disable:variable-name API description
+
 import {dedupingMixin} from '../utils/mixin.js';
 
 import {PropertiesChanged} from './properties-changed.js';

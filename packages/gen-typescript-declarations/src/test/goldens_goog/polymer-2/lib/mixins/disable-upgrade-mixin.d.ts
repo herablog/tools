@@ -8,6 +8,9 @@
  *   lib/mixins/disable-upgrade-mixin.html
  */
 
+
+// tslint:disable:variable-name API description
+
 /// <reference path="element-mixin.d.ts" />
 
 declare namespace Polymer {

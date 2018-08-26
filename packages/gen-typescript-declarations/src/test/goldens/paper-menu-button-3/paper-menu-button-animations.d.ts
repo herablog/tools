@@ -8,6 +8,9 @@
  *   paper-menu-button-animations.js
  */
 
+
+// tslint:disable:variable-name API description
+
 import {NeonAnimationBehavior} from '@polymer/neon-animation/neon-animation-behavior.js';
 
 import {Polymer} from '@polymer/polymer/lib/legacy/polymer-fn.js';

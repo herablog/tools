@@ -8,6 +8,9 @@
  *   lib/mixins/element-mixin.html
  */
 
+
+// tslint:disable:variable-name API description
+
 /// <reference path="../utils/boot.d.ts" />
 /// <reference path="../utils/settings.d.ts" />
 /// <reference path="../utils/mixin.d.ts" />

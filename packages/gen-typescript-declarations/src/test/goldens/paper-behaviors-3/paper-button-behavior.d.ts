@@ -8,6 +8,9 @@
  *   paper-button-behavior.js
  */
 
+
+// tslint:disable:variable-name API description
+
 import {IronButtonState} from '@polymer/iron-behaviors/iron-button-state.js';
 
 import {IronControlState} from '@polymer/iron-behaviors/iron-control-state.js';

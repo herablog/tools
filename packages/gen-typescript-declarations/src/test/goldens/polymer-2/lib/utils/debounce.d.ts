@@ -8,6 +8,9 @@
  *   lib/utils/debounce.html
  */
 
+
+// tslint:disable:variable-name API description
+
 /// <reference path="boot.d.ts" />
 /// <reference path="mixin.d.ts" />
 /// <reference path="async.d.ts" />

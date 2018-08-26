@@ -8,6 +8,9 @@
  *   lib/mixins/disable-upgrade-mixin.js
  */
 
+
+// tslint:disable:variable-name API description
+
 import {ElementMixin} from './element-mixin.js';
 
 import {dedupingMixin} from '../utils/mixin.js';

@@ -8,6 +8,9 @@
  *   lib/utils/html-tag.js
  */
 
+
+// tslint:disable:variable-name API description
+
 /**
  * Class representing a static string value which can be used to filter
  * strings by asseting that they have been created via this class. The

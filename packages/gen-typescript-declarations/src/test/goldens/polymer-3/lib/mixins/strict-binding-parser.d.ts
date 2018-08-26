@@ -8,6 +8,9 @@
  *   lib/mixins/strict-binding-parser.js
  */
 
+
+// tslint:disable:variable-name API description
+
 import {isPath} from '../utils/path.js';
 
 import {dedupingMixin} from '../utils/mixin.js';

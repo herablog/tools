@@ -8,6 +8,9 @@
  *   lib/legacy/legacy-element-mixin.js
  */
 
+
+// tslint:disable:variable-name API description
+
 import {ElementMixin} from '../mixins/element-mixin.js';
 
 import {GestureEventListeners} from '../mixins/gesture-event-listeners.js';

@@ -8,6 +8,9 @@
  *   lib/mixins/property-accessors.js
  */
 
+
+// tslint:disable:variable-name API description
+
 import {dedupingMixin} from '../utils/mixin.js';
 
 import * as caseMap$0 from '../utils/case-map.js';

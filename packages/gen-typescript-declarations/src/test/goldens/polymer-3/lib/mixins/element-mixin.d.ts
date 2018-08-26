@@ -8,6 +8,9 @@
  *   lib/mixins/element-mixin.js
  */
 
+
+// tslint:disable:variable-name API description
+
 import {dedupingMixin} from '../utils/mixin.js';
 
 import {stylesFromTemplate, stylesFromModuleImports} from '../utils/style-gather.js';

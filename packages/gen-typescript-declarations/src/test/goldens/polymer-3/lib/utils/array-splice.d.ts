@@ -8,6 +8,9 @@
  *   lib/utils/array-splice.js
  */
 
+
+// tslint:disable:variable-name API description
+
 export {calculateSplices};
 
 

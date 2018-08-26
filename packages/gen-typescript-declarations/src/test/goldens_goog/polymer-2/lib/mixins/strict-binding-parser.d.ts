@@ -8,6 +8,9 @@
  *   lib/mixins/strict-binding-parser.html
  */
 
+
+// tslint:disable:variable-name API description
+
 /// <reference path="../utils/boot.d.ts" />
 /// <reference path="../utils/path.d.ts" />
 /// <reference path="../utils/mixin.d.ts" />

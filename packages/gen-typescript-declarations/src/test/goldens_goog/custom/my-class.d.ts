@@ -8,6 +8,9 @@
  *   my-class.js
  */
 
+
+// tslint:disable:variable-name API description
+
 declare class MyClass {
   dont_exclude_this_property: string;
   constructor(num: number, truth: boolean);

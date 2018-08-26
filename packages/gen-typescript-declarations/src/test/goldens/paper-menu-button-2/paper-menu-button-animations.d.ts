@@ -8,6 +8,9 @@
  *   paper-menu-button-animations.html
  */
 
+
+// tslint:disable:variable-name API description
+
 /// <reference path="../polymer/types/polymer.d.ts" />
 /// <reference path="../neon-animation/neon-animation-behavior.d.ts" />
 

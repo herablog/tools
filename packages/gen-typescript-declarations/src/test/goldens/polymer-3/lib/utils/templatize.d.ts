@@ -8,6 +8,9 @@
  *   lib/utils/templatize.js
  */
 
+
+// tslint:disable:variable-name API description
+
 import {PropertyEffects} from '../mixins/property-effects.js';
 
 import {MutableData} from '../mixins/mutable-data.js';

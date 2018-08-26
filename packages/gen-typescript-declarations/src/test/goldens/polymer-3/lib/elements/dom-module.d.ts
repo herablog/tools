@@ -8,6 +8,9 @@
  *   lib/elements/dom-module.js
  */
 
+
+// tslint:disable:variable-name API description
+
 import {resolveUrl, pathFromUrl} from '../utils/resolve-url.js';
 
 export {DomModule};

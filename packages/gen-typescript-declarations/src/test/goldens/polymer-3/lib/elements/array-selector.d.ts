@@ -8,6 +8,9 @@
  *   lib/elements/array-selector.js
  */
 
+
+// tslint:disable:variable-name API description
+
 import {PolymerElement} from '../../polymer-element.js';
 
 import {dedupingMixin} from '../utils/mixin.js';

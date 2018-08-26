@@ -8,6 +8,9 @@
  *   lib/utils/debounce.js
  */
 
+
+// tslint:disable:variable-name API description
+
 export {Debouncer};
 
 declare class Debouncer {

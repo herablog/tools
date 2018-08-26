@@ -8,6 +8,9 @@
  *   lib/elements/dom-repeat.js
  */
 
+
+// tslint:disable:variable-name API description
+
 import {PolymerElement} from '../../polymer-element.js';
 
 import {TemplateInstanceBase, templatize, modelForElement as modelForElement$0} from '../utils/templatize.js';

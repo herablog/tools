@@ -8,6 +8,9 @@
  *   paper-menu-button.js
  */
 
+
+// tslint:disable:variable-name API description
+
 import {IronA11yKeysBehavior} from '@polymer/iron-a11y-keys-behavior/iron-a11y-keys-behavior.js';
 
 import {IronControlState} from '@polymer/iron-behaviors/iron-control-state.js';

@@ -8,6 +8,9 @@
  *   lib/elements/dom-module.html
  */
 
+
+// tslint:disable:variable-name API description
+
 /// <reference path="../utils/boot.d.ts" />
 /// <reference path="../utils/resolve-url.d.ts" />
 

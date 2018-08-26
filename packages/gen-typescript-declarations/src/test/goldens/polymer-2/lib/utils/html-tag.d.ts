@@ -8,6 +8,9 @@
  *   lib/utils/html-tag.html
  */
 
+
+// tslint:disable:variable-name API description
+
 /// <reference path="boot.d.ts" />
 
 /**
