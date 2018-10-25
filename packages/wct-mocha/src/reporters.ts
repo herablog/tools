@@ -24,10 +24,10 @@ export let jsSuites: Array<undefined> = [];
  * @return {!Array.<!Mocha.reporters.Base} The reporters that should be used.
  */
 export function determineReporters(
-    socket: CLISocket, parent: MultiReporter|null): ReporterFactory[] {
+    socket: CLISocket, parent: MultiReporter): ReporterFactory[] {
   // Parents are greedy.
   if (parent) {
-    return [parent.childReporter()];
+    return [parent.childReporter(window.location)];
   }
 
   // Otherwise, we get to run wild without any parental supervision!
