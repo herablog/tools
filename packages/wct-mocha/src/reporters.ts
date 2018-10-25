@@ -27,7 +27,7 @@ export function determineReporters(
     socket: CLISocket, parent: MultiReporter): ReporterFactory[] {
   // Parents are greedy.
   if (parent) {
-    return [parent.childReporter(window.location)];
+    return [parent.childReporter()];
   }
 
   // Otherwise, we get to run wild without any parental supervision!

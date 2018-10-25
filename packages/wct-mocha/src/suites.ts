@@ -120,8 +120,7 @@ function _runMocha(reporter: MultiReporter, done: () => void, waited: boolean) {
   const mocha = window.mocha;
   const Mocha = window.Mocha;
 
-  mocha.reporter(
-      reporter.childReporter(window.location) as {} as Mocha.Reporter);
+  mocha.reporter(reporter.childReporter() as {} as Mocha.Reporter);
   mocha.suite.title = reporter.suiteTitle(window.location);
   mocha.grep(GREP);
 
