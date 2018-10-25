@@ -34,17 +34,10 @@ const CAN_STYLE_GROUP = userAgent.match('webkit');
 // Track the indent for faked `console.group`
 let logIndent = '';
 
-function getStyle(style?: keyof typeof STYLES): string {
-  if (style === undefined) {
-    return STYLES.plain;
-  }
-  return STYLES[style] || STYLES.plain;
-}
-
 function log(text: string, style?: keyof typeof STYLES) {
   text = text.split('\n').map((l) => logIndent + l).join('\n');
   if (CAN_STYLE_LOG) {
-    console.log('%c' + text, getStyle(style));
+    console.log('%c' + text, STYLES[style] || STYLES.plain);
   } else {
     console.log(text);
   }
@@ -52,7 +45,7 @@ function log(text: string, style?: keyof typeof STYLES) {
 
 function logGroup(text: string, style?: keyof typeof STYLES) {
   if (CAN_STYLE_GROUP) {
-    console.group('%c' + text, getStyle(style));
+    console.group('%c' + text, STYLES[style] || STYLES.plain);
   } else if (console.group) {
     console.group(text);
   } else {

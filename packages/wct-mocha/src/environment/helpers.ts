@@ -132,7 +132,7 @@ export function flush(callback: () => void) {
   } else if (window.WebComponents && window.WebComponents.flush) {
     scope = window.WebComponents;
   }
-  if (scope && scope.flush) {
+  if (scope) {
     scope.flush();
   }
 

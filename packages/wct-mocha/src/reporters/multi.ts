@@ -48,16 +48,16 @@ export interface ReporterFactory {
 }
 
 interface ExtendedTest extends Mocha.ITest {
-  err: {}|undefined;
+  err: {};
 }
 
 /**
  * A Mocha-like reporter that combines the output of multiple Mocha suites.
  */
 export default class MultiReporter implements Reporter {
-  readonly reporters: ReadonlyArray<Reporter>;
-  readonly parent: MultiReporter|undefined|null;
-  readonly basePath: string;
+  private readonly reporters: ReadonlyArray<Reporter>;
+  private readonly parent: MultiReporter|undefined;
+  private readonly basePath: string;
   total: number;
   private currentRunner: null|Mocha.IRunner;
   /** Arguments that would be called on emit(). */
@@ -73,7 +73,7 @@ export default class MultiReporter implements Reporter {
    */
   constructor(
       numSuites: number, reporters: ReporterFactory[],
-      parent: MultiReporter|undefined|null) {
+      parent: MultiReporter|undefined) {
     this.reporters = reporters.map((reporter) => {
       return new reporter(this);
     });
@@ -92,10 +92,12 @@ export default class MultiReporter implements Reporter {
   }
 
   /**
+   * @param location The location this reporter represents.
    * @return A reporter-like "class" for each child suite
    *     that should be passed to `mocha.run`.
    */
-  childReporter(): ReporterFactory {
+  childReporter(location: Location|string): ReporterFactory {
+    const name = this.suiteTitle(location);
     // The reporter is used as a constructor, so we can't depend on `this` being
     // properly bound.
     const self = this;
