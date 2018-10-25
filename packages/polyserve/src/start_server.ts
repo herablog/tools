@@ -419,6 +419,9 @@ export function getApp(options: ServerOptions): express.Express {
   app.get('/*', (req, res) => {
     pushResources(options, req, res);
     const filePath = req.path;
+    send.mime.define({
+      'application/wasm': ['wasm'],
+    });
     send(
         req,
         filePath,
